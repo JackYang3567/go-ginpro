@@ -1,0 +1,41 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.tmpl
+
+[GIN-debug] GET    /swagger/*any             --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (4 handlers)
+[GIN-debug] GET    /index                    --> main.main.func2 (4 handlers)
+[GIN-debug] GET    /v1/captcha               --> ginpro/controllers.GetCaptcha (4 handlers)
+[GIN-debug] GET    /v1/captcha/:captchaId    --> ginpro/controllers.GetCaptchaImage (4 handlers)
+[GIN-debug] GET    /v1/captcha/verify/:captchaId/:value --> ginpro/controllers.VerifyCaptcha (4 handlers)
+[GIN-debug] GET    /admin/secrets            --> main.main.func3 (5 handlers)
+[GIN-debug] POST   /v1/tenant                --> ginpro/controllers.CreatedTenant (5 handlers)
+[GIN-debug] PUT    /v1/tenant                --> ginpro/controllers.UpdateTenant (5 handlers)
+[GIN-debug] GET    /v1/tenant                --> ginpro/controllers.GetTenantList (5 handlers)
+[GIN-debug] GET    /v1/tenant/:tenant_id     --> ginpro/controllers.GetTenantById (5 handlers)
+[GIN-debug] GET    /v1/tenant/name/:tenant_name --> ginpro/controllers.GetTenantByName (5 handlers)
+[GIN-debug] DELETE /v1/tenant/:tenant_id     --> ginpro/controllers.DeleteTenantById (5 handlers)
+[GIN-debug] POST   /v1/login                 --> ginpro/controllers.LogIn (4 handlers)
+[GIN-debug] POST   /v1/singup                --> ginpro/controllers.SingUp (4 handlers)
+[GIN-debug] POST   /v1/singin                --> ginpro/controllers.SingIn (4 handlers)
+[GIN-debug] PUT    /v1/changepass            --> ginpro/controllers.ChangePass (4 handlers)
+[GIN-debug] POST   /v1/token                 --> ginpro/controllers.CreatedToken (4 handlers)
+[GIN-debug] GET    /v1/user/:id              --> ginpro/controllers.GetUserById (4 handlers)
+[GIN-debug] GET    /v1/user/email/:email     --> ginpro/controllers.GetUserByEmail (4 handlers)
+[GIN-debug] GET    /v1/user/name/:name       --> ginpro/controllers.GetUserByName (4 handlers)
+[GIN-debug] GET    /v1/user/tenant/:tenant_id --> ginpro/controllers.GetUserByTenantId (4 handlers)
+[GIN-debug] GET    /v1/test                  --> ginpro/controllers.Test (4 handlers)
+[GIN-debug] Listening and serving HTTP on :9090
+[GIN] 2022/04/21 - 09:00:04 | 404 |            0s |             ::1 | GET      "/"
+[GIN] 2022/04/21 - 09:00:04 | 404 |            0s |             ::1 | GET      "/favicon.ico"
+[GIN] 2022/04/21 - 09:00:16 | 200 |       318.8µs |             ::1 | GET      "/swagger/index.html"
+[GIN] 2022/04/21 - 09:00:16 | 200 |       735.2µs |             ::1 | GET      "/swagger/swagger-ui.css"
+[GIN] 2022/04/21 - 09:00:16 | 200 |      1.6705ms |             ::1 | GET      "/swagger/swagger-ui-bundle.js"
+[GIN] 2022/04/21 - 09:00:16 | 200 |      1.1849ms |             ::1 | GET      "/swagger/swagger-ui-standalone-preset.js"
+[GIN] 2022/04/21 - 09:00:16 | 200 |       579.7µs |             ::1 | GET      "/swagger/doc.json"
+[GIN] 2022/04/21 - 09:00:16 | 200 |     75.9441ms |             ::1 | GET      "/swagger/favicon-32x32.png"
