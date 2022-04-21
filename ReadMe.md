@@ -28,7 +28,7 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/JackYang3567/go-ginpro.git
 
-修改.git/config 中的rul 
+修改.git/config 中的url 
 https://token@github.com/JackYang3567/go-ginpro.git
 
 git push -u origin main
