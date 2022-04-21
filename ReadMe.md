@@ -27,6 +27,10 @@ git add README.md
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/JackYang3567/go-ginpro.git
+
+修改.git/config 中的rul 
+https://token@github.com/JackYang3567/go-ginpro.git
+
 git push -u origin main
 ```
 ## 6.2、…or push an existing repository from the command line
